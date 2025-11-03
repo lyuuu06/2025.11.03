@@ -1,0 +1,11 @@
+id,question,choiceA,choiceB,choiceC,choiceD,answerIndex,feedback
+1,"p5.js 程式中，setup() 的主要用途為何？","每個 frame 都執行一次","只在程式開始時執行一次","處理滑鼠事件","載入外部資源用",1,"setup() 在程式開始時執行一次，常用來建立畫布與初始化設定。"
+2,"draw() 函式在 p5.js 中的行為是？","只執行一次","每秒執行一次固定次數","每個 frame 持續執行","只在滑鼠點擊時執行",2,"draw() 預設每個 frame 執行（連續更新畫面），frameRate 可調整速率。"
+3,"createCanvas(400, 300) 定義的是？","畫布的像素寬高","背景顏色","字型大小","座標原點",0,"createCanvas(width, height) 用來建立畫布並設定其像素寬高。"
+4,"若要在載入圖檔前等待，應該使用哪個函式？","preload()","setup()","draw()","loadImage()",0,"preload() 用來載入外部資源（如圖、音）並確保載入完成後再執行 setup()。"
+5,"在畫布上改變塗色應先呼叫哪個函式？","stroke()","fill()","background()","noLoop()",1,"fill() 設定形狀的填滿顏色；stroke() 設定邊線顏色，兩者順序會影響渲染。"
+6,"rectMode(CENTER) 的效果是？","矩形用中心點繪製","矩形以左上角繪製","矩形以右下角繪製","矩形會自動縮放",0,"rectMode(CENTER) 使 rect() 的 x,y 為矩形中心點，預設是 CORNER（左上角）。"
+7,"使用 push() / pop() 的主要目的是？","加速運算","建立變數作用域","限制變換（translate/rotate）的影響範圍","清除畫布",2,"push()/pop() 保存與還原樣式與變換狀態，常用於局部 translate/rotate。"
+8,"random(10, 20) 會回傳什麼？","介於 0 與 10 的值","介於 10 與 20 的隨機浮點數","永遠為整數 10 或 20","回傳陣列",1,"random(min, max) 回傳落在 min（含）與 max（不含）之間的隨機浮點數，若需整數可用 floor()/int()。"
+9,"哪個函式可讓 draw() 停止持續執行？","noLoop()","stop()","pause()","frameRate(0)",0,"呼叫 noLoop() 可停止重複執行 draw()；之後可用 loop() 恢復。"
+10,"在 p5.js 中要建立 HTML 按鈕通常使用？","createCanvas()","createButton()","select()","button()",1,"createButton() 用來建立 DOM 按鈕，可搭配 mousePressed() 等事件。"
